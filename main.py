@@ -1,8 +1,4 @@
 
-
-bids={}
-bidding_finished = False
-
 def find_highest_bidder(bidding_record):
     highest_bid=0
     winner = " "
@@ -13,6 +9,8 @@ def find_highest_bidder(bidding_record):
             winner = bidder
     print(f"The winner is {winner} with a bid of {highest_bid}")
 
+bids={}
+bidding_finished = False
 while not bidding_finished:
 
     name=input("What is ur name?: ")
